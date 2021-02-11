@@ -1,0 +1,32 @@
+{
+  "name": "betterscript",
+  "version": "1.0.0",
+  "description": "A new approach to containerized global environments.",
+  "main": "index.js",
+  "dependencies": {
+    "git-scripts": "^0.4.3",
+    "surge": "^0.21.7"
+  },
+  "devDependencies": {
+    "surge": "latest",
+    "git-scripts": "0.2.1"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain betterscript.surge.sh"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderElectronics/betterscript.git"
+  },
+  "author": "Ari Stehney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderElectronics/betterscript/issues"
+  },
+  "homepage": "https://github.com/CoderElectronics/betterscript#readme"
+}
