@@ -1,0 +1,41 @@
+<meta name="robots" content="noindex">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BetterScript Playground</title>
+
+    <link rel="stylesheet" href="src/css/sandbox.css">
+  </head>
+  <body>
+    <h1 style="color: green;"> 
+      Form test (Running in test.bjs)
+    </h1> 
+    <p> 
+      Click on the button to create 
+      a form dynamically 
+    </p> 
+    <button onClick="test.run('createForm()');"> 
+        click here 
+    </button> 
+    <p id="formcontext"></p>
+
+    <script>
+      // String to demonstate sandbox contexts
+      var testme = "Testing 1 2 3...";
+
+      function alertDone(){
+        console.log(testil.exports.title_script);
+      }
+    </script>
+
+    <script src="src/bjs/test.bjs"  type="text/betterscript" data-export="test"  data-sandbox="testme"></script>
+    <script src="src/bjs/test2.bjs" type="text/betterscript" data-export="test2" data-sandbox="testme"></script>
+
+    <script type="text/betterscript" data-export="testil" data-callback="alertDone">
+      exports.title_script = "This is another test!";
+    </script>
+    
+    <script type="text/javascript" src="src/js/betterscript.js"></script>
+  </body>
+</html>

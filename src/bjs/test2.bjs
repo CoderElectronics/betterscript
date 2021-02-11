@@ -1,0 +1,8 @@
+/*
+    BetterScript demo console applet
+
+    by: Ari Stehney
+*/
+
+console.log("Loaded the second!");
+console.log(testme);

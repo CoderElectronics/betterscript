@@ -1,10 +1,16 @@
-var down = document.getElementById("GFG_DOWN"); 
+/*
+    BetterScript Form applet demo
+
+    by: Ari Stehney
+*/
+
+var down = document.getElementById("formcontext"); 
 var br = document.createElement("br");  
 
 console.log("Loaded one!");
 console.log(testme);
 
-function GFG_Fun() { 
+function createForm() { 
     // Create a form synamically 
     var form = document.createElement("form"); 
     form.setAttribute("method", "post"); 
@@ -45,25 +51,15 @@ function GFG_Fun() {
     s.setAttribute("type", "submit"); 
     s.setAttribute("value", "Submit"); 
 
-    // Append the full name input to the form 
+    // Append the inputs to the form
     form.appendChild(FN);  
-
-    // Inserting a line break 
     form.appendChild(br.cloneNode());  
-
-    // Append the DOB to the form 
     form.appendChild(DOB);  
     form.appendChild(br.cloneNode());  
-
-    // Append the emailID to the form 
     form.appendChild(EID);  
     form.appendChild(br.cloneNode());  
-
-    // Append the Password to the form 
     form.appendChild(PWD);  
     form.appendChild(br.cloneNode());  
-
-    // Append the ReEnterPassword to the form 
     form.appendChild(RPWD);  
     form.appendChild(br.cloneNode());  
 
