@@ -1,0 +1,34 @@
+<meta name="robots" content="noindex">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BetterScript Playground</title>
+  </head>
+  <body>
+    <h1 style="color: green;"> 
+        Form test (vm 1)
+    </h1> 
+    <p> 
+      Click on the button to create 
+      a form dynamically 
+    </p> 
+    <button onClick="test.run('GFG_Fun()');"> 
+        click here 
+    </button> 
+    <p id="GFG_DOWN"></p>
+
+    <script>
+      var testme = "Testing 1 2 3...";
+    </script>
+
+    <script src="bjs/test.bjs"  type="text/betterscript" data-export="test"  data-sandbox="testme" data-glv="true"></script>
+    <script src="bjs/test2.bjs" type="text/betterscript" data-export="test2" data-sandbox="testme" data-glv="true"></script>
+
+    <script type="text/betterscript" data-export="testil" data-sandbox="testme" data-glv="true">
+      exports.helloiamcat = "hello;";
+    </script>
+    
+    <script type="text/javascript" src="betterscript.js"></script>
+  </body>
+</html>
