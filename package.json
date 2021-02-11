@@ -24,7 +24,7 @@
     "url": "git+https://github.com/CoderElectronics/betterscript.git"
   },
   "author": "Ari Stehney",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CoderElectronics/betterscript/issues"
   },
