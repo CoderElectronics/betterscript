@@ -22,10 +22,10 @@ var betterscript = {
     var scripts = document.querySelectorAll('script[type="text/betterscript"]');
     scripts.forEach(function (item, index) {
       var dsrc = item.getAttribute("src");
-      var dsandbox = item.getAttribute("data-sandbox");
-      var dexpname = item.getAttribute("data-export");
-      var dcallback = item.getAttribute("data-callback");
-      var dglv = item.getAttribute("data-glv");
+      var dsandbox = item.getAttribute("bscript-sandbox");
+      var dexpname = item.getAttribute("bscript-export");
+      var dcallback = item.getAttribute("bscript-callback");
+      var dglv = item.getAttribute("bscript-glv");
 
       if (dexpname == null) {
         console.log("Interpreter could not find data-export, please add whichever one is missing or the script will be ignored!");
